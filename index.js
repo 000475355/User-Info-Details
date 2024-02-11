@@ -19,7 +19,7 @@ async function getUserInfo() {
 function createCardUI(user) {
   let cardUI = `
     <div class="card  m-4" style="width: 18rem;">
-      <img src=${user.rock} class="card-img-top" alt="no pic">
+      <img src=${user.avatar} class="card-img-top" alt="no pic">
       <div class="card-body">
         <h1>${user.first_name} ${user.last_name}</h1>
         <p class="card-text">${user.email}</p>
@@ -44,7 +44,7 @@ function getDetails(userId) {
     if (selectUser) {
         const detailsUI = `
       <div class="card m-4" style="width: 18rem;">
-        <img src=${selectUser.rock} class="card-img-top" alt="no pic">
+        <img src=${selectUser.avatar} class="card-img-top" alt="no pic">
         <div class="card-body">
           <h1>${selectUser.first_name} ${selectUser.last_name}</h1>
           <p class="card-text">${selectUser.email}</p>
